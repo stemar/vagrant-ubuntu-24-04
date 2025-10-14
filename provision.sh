@@ -29,7 +29,7 @@ a2enconf localhost &>/dev/null
 a2enmod rewrite vhost_alias &>/dev/null
 a2ensite virtualhost &>/dev/null
 
-echo '==> Setting MariaDB 10.6 repository'
+echo '==> Setting MariaDB 10.11 repository'
 
 mkdir -p /etc/apt/keyrings
 curl -sSLo /etc/apt/keyrings/mariadb-keyring.pgp https://mariadb.org/mariadb_release_signing_key.pgp
