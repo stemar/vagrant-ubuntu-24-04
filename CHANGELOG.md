@@ -1,18 +1,18 @@
 # Changelog
 
-## [Current release]
-
-### Added
-
-- Added `CHANGELOG.md`
+## 1.0.1 - 2026-01-16
 
 ### Changed
 
-- Updated `README.md`
-- Modified MariaDB source
-- Modified PHP source
+- Updated YAML array format in `settings.yaml`.
+    - Updated `:php_error_reporting` value.
+- Updated `Vagrantfile` by adding local variables.
+    - Modernized path in the `YAML.load_file()` call.
+- Replaced `FORWARDED_PORT_80` variable with `HOST_HTTP_PORT` in 3 files.
+    - Updated `provision.sh`, `adminer.conf`, `virtualhost.conf` with new variable name.
+- Modified the version section of `provision.sh` for the section title and the Apache version output.
+- Updated the last section of `README.md`.
 
-### Fixed
+## 1.0.0 - 2025-10-05
 
-- Updated Adminer to version 5+ plugin code and files
-- Fixed tzdata time zone issue
+_First release_
